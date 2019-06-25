@@ -1,0 +1,342 @@
+html,body {
+    margin: 0;
+}
+.impowerBox, .impowerBox .status_icon, .impowerBox .status_txt {
+    display: inline-block;
+    vertical-align: middle
+}
+
+a {
+    outline: 0
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-weight: 400
+}
+
+a img, fieldset {
+    border: 0
+}
+
+body {
+    font-family: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", sans-serif;
+    color: #fff;
+    background: 0 0;
+}
+
+.impowerBox {
+    line-height: 1.6;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+.impowerBox .title {
+    margin-top: 113px;
+    width: 160px;
+    height: 0px;
+    line-height: 0px;
+    /*background: url("//rescdn.qqmail.com/node/wwopen/wwopenmng/style/images/independent/logo/WeworkLogoBule$773753a2.png") no-repeat left top;*/
+    /*margin: 0 auto;*/
+    color: #0082EF;
+    font-size: 0px;
+    text-align: left;
+}
+.logo {
+    display: none;
+    width: 29px;
+    height: 24px;
+    vertical-align: top;
+    margin-right: 8px;
+}
+
+.impowerBox .qrcode {
+
+    width: 150px;
+    vertical-align:top;
+}
+
+.impowerBox .info {
+    width: 280px;
+    margin: 0 auto
+}
+
+.impowerBox .status {
+    text-align: left;
+    color: #737C84;
+    font-size: 0;
+    margin-top: 10px;
+}
+
+.impowerBox .status.status_browser {
+    text-align: center;
+    padding: 2px 0;
+}
+
+.impowerBox .status p {
+    font-size: 13px
+}
+
+.impowerBox .status_txt p {
+    top: -2px;
+    position: relative;
+    margin: 0
+}
+.impowerBox .icon38_msg {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    margin-right: 12px;
+}
+.impowerBox .icon38_msg.succ {
+    -webkit-animation: scaleBig 0.2s ease-out 0s;
+    -moz-animation: scaleBig 0.2s ease-out 0s;
+    -ms-animation: scaleBig 0.2s ease-out 0s;
+    -o-animation: scaleBig 0.2s ease-out 0s;
+    animation: scaleBig 0.2s ease-out 0s;
+}
+.status.status_succ .status_txt {
+    -webkit-animation: transformRight 0.2s ease-out 0s;
+    -moz-animation: transformRight 0.2s ease-out 0s;
+    -ms-animation: transformRight 0.2s ease-out 0s;
+    -o-animation: transformRight 0.2s ease-out 0s;
+    animation: transformRight 0.2s ease-out 0s;
+}
+.status.status_fail {
+    -webkit-animation: transformLeft 0.2s ease-out 0s;
+    -moz-animation: transformLeft 0.2s ease-out 0s;
+    -ms-animation: transformLeft 0.2s ease-out 0s;
+    -o-animation: transformLeft 0.2s ease-out 0s;
+    animation: transformLeft 0.2s ease-out 0s;
+}
+.impowerBox .status_succ,.impowerBox .status_fail {
+    margin-left: 26px;
+}
+.impowerBox .status_succ .status_txt h4,.impowerBox .status_fail .status_txt h4{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+.impowerBox .status_succ .status_txt p,.impowerBox .status_fail .status_txt p{
+    font-size: 12px;
+    line-height: 17px;
+    color: #A1A7AC;
+}
+.impowerBox .icon38_msg.succ {
+    background-image: url("//rescdn.qqmail.com/node/wwopen/wwopenmng/style/images/independent/icons/Succ_2x$38dc7620.png");
+}
+
+.impowerBox .icon38_msg.warn {
+    background-image: url("//rescdn.qqmail.com/node/wwopen/wwopenmng/style/images/independent/icons/Fail_2x$f2bea9cb.png");
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.result {
+    position: absolute;
+    top: 33%;
+    left: 26px;
+    right: 26px;
+    bottom: 20%;
+}
+.result_iconWrap {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.result_icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url("//rescdn.qqmail.com/node/wwopen/wwopenmng/style/images/independent/icons/InfoBig_2x$4b9e452f.png") no-repeat left top;
+    background-size: cover;
+}
+.result_text {
+    color: #333333;
+    font-size: 14px;
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+}
+
+.wrp_code {
+    position: relative;
+    margin-top: 6px;
+}
+
+.wrp_code_rl_bg{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+
+
+}
+
+.wrp_code_rl_mask {
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+    background: white;
+    opacity: 0.9;
+    filter:alpha(opacity=90)
+}
+
+.wrp_code_rl_btn {
+    cursor: pointer;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#F8F8F8));
+    background-image: -webkit-linear-gradient(top,#fff 0,#F8F8F8 100%);
+    background-image: -o-linear-gradient(top,#fff 0,#F8F8F8 100%);
+    background-image: linear-gradient(to bottom,#fff 0,#F8F8F8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFF8F8F8", GradientType=0);
+    border-radius: 2px;
+    vertical-align: middle;
+    border: 1px solid #AAA;
+
+    display: inline-block;
+    margin: 0;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    min-width: 24px;
+    height: 24px;
+    padding: 0 12px;
+    background: #F5F5F5;
+    line-height: 24px;
+    outline: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #222;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+}
+
+
+
+.wrp_code_rl_info{
+    color:#222;
+    display: inline-block;
+    position: absolute;
+    height: 110px;
+    top:50%;
+    margin-top: -50px;
+    /*top:80px;*/
+    /*top:0;*/
+    width: 115px;
+    left:50%;
+    margin-left:-57px;
+}
+
+.wrp_code_rl_label{
+    font-size: 14px;
+    padding:15px 0px;
+}
+
+.wrp_code_rl_logo {
+    width : 30px;
+    height:30px;
+    background: url("//rescdn.qqmail.com/node/wwopen/wwopenmng/style/images/independent/icons/InfoNormal$d162c082.png") no-repeat left top;
+    background-size:30px 30px ;
+}
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .logo {
+        content: url("//rescdn.qqmail.com/node/wwopen/wwopenmng/style/images/independent/logo/WeworkLogoBule_2x$b12bb1b6.png");
+    }
+
+    .wrp_code_rl_logo {
+        width : 30px;
+        height:30px;
+        background: url("//rescdn.qqmail.com/node/wwopen/wwopenmng/style/images/independent/icons/InfoNormal_2x$b5bd63aa.png") no-repeat left top;
+        background-size:30px 30px ;
+    }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+    .impowerBox .icon38_msg.succ {
+        background-image: url("//rescdn.qqmail.com/node/wwopen/wwopenmng/style/images/independent/icons/Succ_3x$8c66500f.png");
+    }
+    .impowerBox .icon38_msg.warn{
+        background-image: url("//rescdn.qqmail.com/node/wwopen/wwopenmng/style/images/independent/icons/Fail_3x$89d16f97.png");
+    }
+    .result_icon {
+        background-image: url("//rescdn.qqmail.com/node/wwopen/wwopenmng/style/images/independent/icons/InfoBig_3x$0d2189f1.png");
+    }
+}
+
+.loginPanel {
+    width: 378px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 0 38px;
+    border-radius: 4px;
+    border: 1px solid #E7E9EB;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.03);
+}
+@-webkit-keyframes  scaleBig {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes scaleBig {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes  transformRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes transformRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes  transformLeft {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes transformLeft {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
